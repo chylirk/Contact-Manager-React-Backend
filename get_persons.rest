@@ -1,0 +1,38 @@
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons/6070aa81cc3b420513e620be
+
+###
+GET http://localhost:3001/info
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Arto Hellas",
+  "number": "404-317-6513"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "",
+  "number": "404-317-6513"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Check Chekov",
+  "number": ""
+}
+
+###
+GET http://localhost:3001/api/notes
+Content-Type: application/json
